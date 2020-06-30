@@ -1,0 +1,85 @@
+/* --------------------------------------------------------------
+   Section - Header
+   -------------------------------------------------------------- */
+
+#section-header {
+    padding: $padding-lg 0 $padding-xl;
+    .social {
+        text-align: right;
+    }
+}
+
+#logo {
+    a {
+        position: relative;
+        display: inline-block;
+        color: $color-black;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2em;
+        letter-spacing: -0.3px;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            display: block;
+            left: -32px;
+            top: 5px;
+            border-radius: 16px;
+            border: 2px solid $color-off-gold;
+            transition: .3s all;
+        }
+        &:after {
+            display: none;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-black;
+            &:before {
+                border-color: $color-gold;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.social {
+    a {
+        transition: .3s ease opacity;
+        &:hover {
+            opacity: 0.7;
+        }
+        &:after {
+            display: none;
+        }
+    }
+    img {
+        margin: 0 16px;
+    }
+}
+
+@media (max-width: 991px) {
+	#section-header {
+		padding: $padding-lg 0;
+	}
+}
+
+@media (max-width: 767px) {
+	#section-header {
+		padding: $padding-lg 0;
+		#logo {
+			text-align: center;
+			a {
+				&:before {
+					display: none;
+				}
+			}
+		}
+		.social {
+			margin-top: $padding-xs;
+			text-align: center;
+		}
+	}
+}

@@ -5,6 +5,15 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+          rule: {
+            include: `/images/inline/`
+          }
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

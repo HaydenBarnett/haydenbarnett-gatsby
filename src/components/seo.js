@@ -68,7 +68,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link href="https://use.typekit.net/zbk2fbp.css" rel="stylesheet" />
+    </Helmet>
   )
 }
 

@@ -1,21 +1,44 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import profile from "../images/hayden-intro-profile@2x.png"
+// import Squiggle from "../images/inline/squiggle.svg"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className="section-intro">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="intro">
+              <div className="intro-image">
+                <img src={profile} width="450" height="475" alt="" />
+              </div>
+              <div className="intro-title animated fadeInLeft delay-1">
+                <h1 className="intro-heading">Front-end developer & digital designer.</h1>
+                <p className="intro-position">Director of <a className="underline" href="https://withsurge.com" target="_blank" rel="noreferrer">Surge</a>&nbsp;&nbsp;<span className="divider">/</span>&nbsp;&nbsp;Developer at <a className="underline" href="https://www.tyro.com" target="_blank" rel="noreferrer">Tyro</a></p>
+                <p className="intro-location">Sydney, Australia</p>
+              </div>
+              <div className="squiggle-container">
+                {/* <Squiggle /> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container container-sm">
+        <div className="row">
+          <div className="col-12">
+            <div className="intro-buttons">
+              <a className="btn btn-secondary animated fadeInLeft delay-2" href="https://www.linkedin.com/in/haydenbarnett">LinkedIn</a>
+              <a className="btn btn-primary animated fadeInLeft delay-3" href="mailto:hello@haydenbarnett.com">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
 )
 
