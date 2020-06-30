@@ -7,7 +7,7 @@ import profile from "../images/hayden-intro-profile@2x.png"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Front-end developer &amp; digital designer" />
     <div className="section-intro">
       <div className="container">
         <div className="row">
