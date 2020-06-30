@@ -1,7 +1,3 @@
-/* --------------------------------------------------------------
-  Layout
-  -------------------------------------------------------------- */
-
 body::-webkit-scrollbar-track {
   border-radius: 0;
   background-color: $color-off-white;
@@ -17,46 +13,16 @@ body::-webkit-scrollbar-thumb {
   background-color: $color-gold;
 }
 
-#content {
-    opacity: 1;
-    -webkit-transition: transform, .5s, opacity .5s;
-    -moz-transition: transform, .5s, opacity .5s;
-    transition: transform, .5s, opacity .5s;    
-    &.fade-out {
-        user-select: none;
-        pointer-events: none;
-        opacity: 0;
-        -webkit-transform: translate3d(0, $padding-lg, 0);
-        transform: translate3d(0, $padding-lg, 0);
-    }
-}
-
 .container.container-sm {
     max-width: $container-sm;
 }
 
-/* --------------------------------------------------------------
-    Responsive
-    -------------------------------------------------------------- */
+.section-404 {
+  padding: $padding-xl 0;
+}
 
 @media (max-width: 991px) {
     .container.container-sm {
         max-width: 540px;
     }
-}
-
-@media (max-width: 767px) {
-
-}
-
-@media (max-width: 575px) {
-
-    #intro-title,
-    #projects,
-    #hello,
-    #footer,
-    article {
-        padding: $padding-xs 0;
-    }
-
 }

@@ -1,15 +1,12 @@
-/* --------------------------------------------------------------
-   Section - Header
-   -------------------------------------------------------------- */
-
-#section-header {
+.section-header {
     padding: $padding-lg 0 $padding-xl;
-    .social {
-        text-align: right;
+
+    @media (max-width: 991px) {
+        padding: $padding-lg 0;
     }
 }
 
-#logo {
+.logo {
     a {
         position: relative;
         display: inline-block;
@@ -43,9 +40,19 @@
             }
         }
     }
+
+    @media (max-width: 767px) {
+        text-align: center;
+        a {
+            &:before {
+                display: none;
+            }
+        }
+    }
 }
 
 .social {
+    text-align: right;
     a {
         transition: .3s ease opacity;
         &:hover {
@@ -58,28 +65,9 @@
     img, svg {
         margin: 0 16px;
     }
-}
 
-@media (max-width: 991px) {
-	#section-header {
-		padding: $padding-lg 0;
-	}
-}
-
-@media (max-width: 767px) {
-	#section-header {
-		padding: $padding-lg 0;
-		#logo {
-			text-align: center;
-			a {
-				&:before {
-					display: none;
-				}
-			}
-		}
-		.social {
-			margin-top: $padding-xs;
-			text-align: center;
-		}
-	}
+    @media (max-width: 767px) {
+        margin-top: $padding-xs;
+        text-align: center;
+    }
 }

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Hayden Barnett`,
     description: `Hayden Barnett is a front-end developer & digital designer currently working at Tyro in Sydney, Australia.`,
-    author: `@haydenbarnett`,
+    author: `@haydenjbarnett`,
   },
   plugins: [
     `gatsby-plugin-sass`,

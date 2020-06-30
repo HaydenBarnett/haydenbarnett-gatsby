@@ -7,11 +7,11 @@ import LinkedIn from "../images/linkedin.svg"
 import Email from "../images/email.svg"
 
 const Header = () => (
-  <div id="section-header">
+  <div className="section-header">
     <div className="container container-sm">
       <div className="row">
         <div className="col-md-6">
-          <div id="logo">
+          <div className="logo">
             <Link to="/">Hayden Barnett</Link>
           </div>
         </div>
