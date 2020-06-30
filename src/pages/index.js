@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import profile from "../images/hayden-intro-profile@2x.png"
-// import Squiggle from "../images/inline/squiggle.svg"
+import Squiggle from '../images/squiggle.inline.svg'
 
 const IndexPage = () => (
   <Layout>
@@ -22,7 +22,7 @@ const IndexPage = () => (
                 <p className="intro-location">Sydney, Australia</p>
               </div>
               <div className="squiggle-container">
-                {/* <Squiggle /> */}
+                <Squiggle />
               </div>
             </div>
           </div>
