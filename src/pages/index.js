@@ -18,7 +18,7 @@ const IndexPage = () => (
               </div>
               <div className="intro-title animated fadeInLeft delay-1">
                 <h1 className="intro-heading">Front-end developer & digital designer.</h1>
-                <p className="intro-position">Director of <a className="underline" href="https://withsurge.com" target="_blank" rel="noreferrer">Surge</a>&nbsp;&nbsp;<span className="divider">/</span>&nbsp;&nbsp;Developer at <a className="underline" href="https://www.tyro.com" target="_blank" rel="noreferrer">Tyro</a></p>
+                <p className="intro-position">UX Engineer at <a className="underline" href="https://au.koala.com" target="_blank" rel="noreferrer">Koala</a> <span className="divider">/</span> Creative Director of <a className="underline" href="https://surge.studio/" target="_blank" rel="noreferrer">Surge</a></p>
                 <p className="intro-location">Sydney, Australia</p>
               </div>
               <div className="squiggle-container">

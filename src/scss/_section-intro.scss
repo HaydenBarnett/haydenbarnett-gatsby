@@ -15,7 +15,7 @@
 }
 
 .intro-title {
-    padding: 100px 0 0;
+    padding: 6.25rem 0 0;
     width: 620px;
     display: inline-block;
     position: relative;
@@ -36,7 +36,7 @@
 }
 
 .intro-heading {
-    margin: 0 0 40px 0;
+    margin: 0 0 2.5rem 0;
 }
 
 .intro-position {
@@ -46,6 +46,12 @@
 .divider {
     font-weight: 500;
     color: $color-grey;
+    margin: 0 0.5rem;
+    @media (max-width: 499px) {
+        display: block;
+        height: 1px;
+        opacity: 0;
+    }
 }
 
 .intro-location {
@@ -58,7 +64,7 @@
     right: 0;
     bottom: -23px;
     .btn {
-        margin-left: 20px;
+        margin-left: 1.25rem;
     }
 }
 
@@ -107,18 +113,13 @@
     }
 }
 
-/* --------------------------------------------------------------
-   Responsive
-   -------------------------------------------------------------- */
-
-
 @media (max-width: 1199px) {
     .intro-title {
         width: 500px;
         padding-top: 70px;
     }
     .intro-heading {
-        margin-bottom: 30px;
+        margin-bottom: 2rem;
     }
     #squiggle-svg {
         width: 700px;
@@ -155,65 +156,56 @@
 
 @media (max-width: 767px) {
     .intro {
-        height: 450px;
+        height: auto;
     }
     .intro-title {
-        left: 60px;
-        width: 330px;
-        padding-top: 60px;
-    }
-    #squiggle-svg {
-        width: 420px;
-    }
-}
-
-@media (max-width: 599px) {
-    .intro {
-        height: 300px;
+        width: 100%;
+        left: 0;
+        padding: 50px;
     }
     .intro-buttons {
         left: 0;
         text-align: center;
         .btn {
-            margin-right: 20px;
+            margin-right: 1rem;
         }
     }
-    .intro-title {
-        width: 100%;
-        left: 0;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
     .squiggle-container {
-        top: -20px;
-        left: 20px;
+        top: -1rem;
+        left: 1rem;
         right: 0;
     }
     #squiggle-svg {
-        width: 400px;
+        width: 420px;
     }
     .intro-image {
         display: none;
     }
 }
 
+@media (max-width: 599px) {
+    #squiggle-svg {
+        width: 400px;
+    }
+}
+
 @media (max-width: 411px) {
     .intro-title {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
     .intro-buttons {
         .btn {
-            margin-left: 5px;
-            margin-right: 5px;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
         }
     }
 }
 
 @media (max-width: 359px) {
     .intro-title {
-        padding-left: 15px;
-        padding-right: 10px;
+        padding-left: 1.5rem;
+        padding-right: 0.5rem;
     }
 
     .intro-heading {
